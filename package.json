@@ -3,12 +3,21 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "-": "0.0.1",
     "@testing-library/jest-dom": "^5.11.5",
     "@testing-library/react": "^11.1.1",
     "@testing-library/user-event": "^12.2.0",
+    "bootswatch": "^4.5.3",
+    "firebase": "^8.0.1",
+    "postcss-import": "^12.0.1",
     "react": "^17.0.1",
+    "react-alertify-js": "0.0.1",
+    "react-router-dom": "^5.2.0",
     "react-dom": "^17.0.1",
     "react-scripts": "4.0.0",
+    "react-toastify": "^6.0.9",
+    "save": "^2.4.0",
+    "tailwindcss": "^1.9.6",
     "web-vitals": "^0.2.4"
   },
   "scripts": {
