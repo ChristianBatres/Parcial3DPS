@@ -5,7 +5,7 @@ import SignIn from "./SignIn";
 import SignUp from "./SignUp";
 import PasswordReset from "./PasswordReset";
 
-import ProfilePage from "./ProfilePage";
+import ProfilePage from "./Empleado";
 import { UserContext } from "../providers/UserProvider";
 
 

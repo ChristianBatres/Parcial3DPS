@@ -13,11 +13,12 @@ const firebaseConfig = {
   measurementId: "G-FH1Z8PMVFT"
 };
 
+
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
 export const auth = firebase.auth();
 export const firestore = firebase.firestore();
-
+export const db = firebase.firestore();
 // Representa el proveedor de autenticación de inicio de sesión de Google.
 // Utilice esta clase para obtener
 const provider = new firebase.auth.GoogleAuthProvider();
