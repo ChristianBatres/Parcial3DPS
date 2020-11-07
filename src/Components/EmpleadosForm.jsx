@@ -179,11 +179,14 @@ const EmpleadosForm = (props) => {
         console.log(posMa);
         console.log(posMe);
         c=0;
-         const sala=null;
-         const nom=null;
       } 
       props.addOrEditEmpleado(values);
       setValues({ ...initialStateValues });
+    }
+    else{
+      toast("Por favor ingrese horarios comprendidos entre 1 y 250", {
+        type: "warning",
+      });
     }
     
   };
@@ -208,6 +211,8 @@ const EmpleadosForm = (props) => {
   return (
     <form onSubmit={handleSubmit} className="card card-body border-primary">
       <div className="form-group input-group">
+      <label>BIENVENIDO!</label>
+      <label>INGRESE SUCESIVAMENTE 3 EMPLEADOS PARA VALIDAR SUS SALARIOS</label>
       <label>Nombre:</label>
         <input
           type="text"
@@ -223,7 +228,10 @@ const EmpleadosForm = (props) => {
       <div className="form-group input-group">
       <label>Horas:</label>
         <input
-          type="text"
+          type="number"
+          min="1" 
+          max="250"
+          step="1"
           value={values.horas}
           name="horas"
           placeholder="Ingrese las horas trabajadas"
